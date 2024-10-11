@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+</head>
+<body>
+    <h1>Get Movie Recommendations</h1>
+    <form action="/recommend" method="POST">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required><br><br>
+        <label for="n_recommendations">Number of Recommendations:</label>
+        <input type="text" id="n_recommendations" name="n_recommendations" required><br><br>
+        <input type="submit" value="Get Recommendations">
+    </form>
+    
+    <h2>Evaluate Model</h2>
+    <button onclick="window.location.href='/evaluate'">Evaluate Model</button>
+</body>
+</html>
